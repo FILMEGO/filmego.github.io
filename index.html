@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- title -->
+  <title>Смотри и скачай свое кино! - FILMEGO</title>
+
+  <!-- chrome -->
+  <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ifmkidjmdndemnaedpemmbgokmppefgl">
+  <!-- font -->
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,600%7COpen+Sans:300,400,500,900" rel="stylesheet" type="text/css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/fontawesome.css" media="all">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.css" media="all">
+  <!-- animate -->
+  <link rel="stylesheet" href="css/animate.css" media="all">
+  <!-- custom style -->
+  <link rel="stylesheet" href="css/style.css" media="all">
+  <!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+</head>
+
+<body class="color-set">
+<!-- preloader -->
+<div id="preloader"></div>
+
+<!-- background image slider -->
+<div id="backgrounds" data-interval="8000">
+  <div class="background smooth bg1 active"></div>
+  <!--<div class="background smooth bg2"></div>-->
+  <!--<div class="background smooth bg3"></div>-->
+</div>
+
+<!-- background overlay -->
+<div id="overlay"></div>
+
+<!-- main container -->
+<div id="main-container" class="container">
+  <div class="row">
+    <!-- container inner column -->
+    <div id="innercol" class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <!-- top header -->
+      <header id="top" class="tmargin33">
+        <div class="row">
+          <!-- logo -->
+          <div id="logo" class="col-xs-12 col-sm-3">
+            <h1 class="margin0 xs-text-center"><img src="images/logo_white.png" alt="" style="width: 50px;"><span class="hide">FILMEGO</span></h1>
+          </div>
+          <!-- navigation -->
+          <nav id="main-nav" class="col-xs-12 col-sm-9">
+            <ul class="bmargin66 fontM xs-text-center">
+              <li class="rolex-nav nav active" data-target="#rolex-slides" data-slide-to="#home">
+                <span class="button smooth"><i class="fa fa-home"></i></span>
+              </li>
+              <li class="rolex-nav nav" data-target="#rolex-slides" data-slide-to="#about">
+                <span class="button smooth"><i class="fa fa-info"></i></span>
+              </li>
+              <li class="rolex-nav nav" data-target="#rolex-slides" data-slide-to="#contact">
+                <span class="button smooth"><i class="fa fa-envelope"></i></span>
+              </li>
+              <li class="rolex-nav nav">
+                <a href="https://vk.com/http_filmego_org" target="_blank" class="button main-color-hover smooth">
+                  <span class="fa fa-vk fa-fw"></span>
+                </a>
+              </li>
+              <li class="rolex-nav nav">
+                <a href="https://twitter.com/FE_Chrome" target="_blank" class="button main-color-hover smooth">
+                  <span class="fa fa-twitter fa-fw"></span>
+                </a>
+              </li>
+              <li class="rolex-nav nav">
+                <a href="https://plus.google.com/u/0/b/113434359789400152625/113434359789400152625/posts" target="_blank" class="button main-color-hover smooth">
+                  <span class="fa fa-google-plus fa-fw"></span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- end top header -->
+
+      <!-- section slider -->
+      <div id="rolex-slides">
+
+        <!-- home section -->
+        <div id="home" class="slide active">
+          <!-- home text slider -->
+          <div class="slider inview" data-inview-animation="fadeInDown">
+            <div class="slide"> <h1 class="section-title fontM text-center">FILMEGO <span> - </span> смотри и скачай свое кино!</h1> </div>
+            <div class="slide"> <h1 class="section-title fontM text-center">FILMEGO <span> - </span> быстрый поиск для браузера</h1> </div>
+            <div class="slide"> <h1 class="section-title fontM text-center">FILMEGO <span> - </span> приложение для Android и iPhone <small>(скоро)</small></h1> </div>
+          </div>
+          <!-- end home text slider -->
+          <h5 class="section-title text-center  bmargin33 tmargin66 inview" data-inview-animation="fadeInDown">Выберите Ваш браузер</h5>
+
+          <!-- home timer -->
+          <div class="row fontM inview" data-inview-animation="fadeInUp">
+            <div class="col col-xs-6 col-sm-3">
+              <div class="cell-container">
+                <div class="center-cell smooth">
+                  <a href="http://goo.gl/tdL8ih" onclick="if(!(navigator.userAgent.indexOf('Firefox') + 1)) { location.href = 'https://addons.mozilla.org/ru/firefox/addon/filmego_org/'; return false; } else { location.href = 'http://goo.gl/tdL8ih'; }" data-location="top" data-browser="Firefox" data-type="Extension">
+                    <img src="/img/browser/Firefox.png" style="width: 100px;">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-xs-6 col-sm-3">
+              <div class="cell-container">
+                <div class="center-cell smooth">
+                  <a href="http://goo.gl/S0XYPU" onclick="chrome.webstore.install('https://chrome.google.com/webstore/detail/ifmkidjmdndemnaedpemmbgokmppefgl',function(){},function(){return false;}); return false;" data-location="top" data-browser="Chrome" data-type="Extension">
+                    <img src="/img/browser/Chroms.png" style="width: 100px;">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-xs-6 col-sm-3">
+              <div class="cell-container">
+                <div class="center-cell smooth">
+                  <a href="http://goo.gl/GAoocY" onclick="opr.addons.installExtension('kgapnicjafkfbbcodmgfkfjogjebbogk',function(){},function(){return false;}); return false;" data-location="top" data-browser="Opera" data-type="Extension">
+                    <img src="/img/browser/Opera.png" style="width: 100px;">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-xs-6 col-sm-3">
+              <div class="cell-container">
+                <div class="center-cell smooth">
+                  <a href="http://goo.gl/RfAEAM" data-location="top" data-browser="Safari" data-type="Extension">
+                    <img src="/img/browser/Safari.png" style="width: 100px;">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end home timer -->
+
+        </div>
+        <!-- end home section -->
+
+        <!-- about section -->
+        <div id="about" class="textslide slide">
+          <h2 class="section-title fontM text-center bmargin33 inview" data-inview-animation="fadeInDown">Как пользоваться?</h2>
+          <p class="inview text-center" data-inview-animation="fadeInDown">Приложение можно устанавливать Вашим родным и близким, которые слабо разбираются в интернете, оно очень простое.</p>
+
+          <!-- service block -->
+          <div class="row tmargin66 inview" data-inview-animation="fadeInUp">
+            <div class="col bmargin66 col-xs-12 col-sm-4">
+              <div class="bmargin33 main-color text-center">
+                <img src="/img/gif1.gif" style="width: 200px;">
+              </div>
+              <p class="text-center">Заходите на страницу фильма</p>
+            </div>
+            <div class="col bmargin66 col-xs-12 col-sm-4">
+              <div class="bmargin33 main-color text-center">
+                <img src="/img/gif3.gif" style="width: 200px;">
+              </div>
+              <p class="text-center">Кликаете на иконку FE</p>
+            </div>
+            <div class="col bmargin66 col-xs-12 col-sm-4">
+              <div class="bmargin33 main-color text-center">
+                <img src="/img/gif2.gif" style="width: 200px;">
+              </div>
+              <p class="text-center">Смотрите или скачиваете фильм</p>
+            </div>
+          </div>
+          <!-- end service block -->
+        </div>
+        <!-- end about section -->
+
+        <!-- contact section -->
+        <div id="contact" class="slide">
+          <h2 class="section-title fontM text-center bmargin33 inview" data-inview-animation="fadeInDown">Контакты</h2>
+          <div class="row margin33">
+            <!-- contact detail -->
+            <div class="col col-xs-12 col-sm-6 bmargin33">
+              <div class="bmargin33">
+                <p class="inview" data-inview-animation="fadeInDown">Есть вопросы к разработчикам?</p>
+              </div>
+              <div class="size18 inview" data-inview-animation="fadeInUp">
+                <p> <span class="detail"><strong>A :</strong> Köydenpunojankatu 1, Helsinki, Финляндия</span></p>
+                <p> <span class="detail"><strong>E :</strong> <a href="mailto:support@filmego.org">support@filmego.org</a></span></p>
+                <p> <span class="detail"><strong>G :</strong> <a href="https://github.com/FILMEGO">https://github.com/FILMEGO</a></span></p>
+              </div>
+            </div>
+            <!-- end contact detail -->
+            <!-- contact form -->
+            <div class="col col-xs-12 col-sm-6 bmargin33">
+              <div id="form-container">
+                <form role="form" id="contact-form" method="post" action="http://optimistov.net/mail.php" class="clearfix">
+                  <div class="form-elements bmargin33 smooth inview" data-inview-animation="fadeInDown">
+                    <label class="sr-only field main-color">Email&#42;</label>
+                    <input class="field" type="email" id="email" name="email" placeholder="Введите Ваш email" required="" data-validation="email">
+                  </div>
+                  <div class="form-elements bmargin33 smooth inview" data-inview-animation="fadeInUp">
+                    <label class="sr-only field">Сообщение&#42;</label>
+                    <textarea class="field full-border" id="comments" name="comments" rows="3" required="" placeholder="Введите Ваше сообщение"></textarea>
+                  </div>
+                  <div class="form-elements smooth text-right inview" data-inview-animation="fadeInUp">
+                    <button type="submit" class="button smooth main-color-hover submit"><span class="fa fa-paper-plane fa-fw"></span><span class="sr-only">Отправить</span></button>
+                  </div>
+                </form>
+                <div id="contact-form-response" class="main-color"></div>
+              </div>
+            </div>
+            <!-- end contact form -->
+          </div>
+        </div>
+        <!-- end contact section -->
+
+      </div>
+      <!-- end section slider -->
+
+    </div>
+    <!-- end container inner column -->
+  </div>
+</div>
+<!-- end main container -->
+
+
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/*
+---------------
+
+Table of Contents:
+1) Body and Common style
+2) Heading style
+3) Preloader
+4) service block
+5) button style
+6) background image loop
+7) background overlay
+8) main container
+9) media query 
+--------------
+*/
+
+/* ==== 1) Body and Common style ==== */
+
+html{font-size:.938em}
+body{font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.5714286;background:#fff;}
+body .fontM{font-family:Montserrat,sans-serif}
+.margin0{margin:0}
+.size18{font-size:18px}
+body .margin66 {margin-top:66px;margin-bottom:66px}
+body .tmargin66 {margin-top:66px}
+body .bmargin66 {margin-bottom:66px}
+body .margin33 {margin-top:33px;margin-bottom:33px}
+body .tmargin33 {margin-top:33px}
+body .bmargin33 {margin-bottom:33px}
+body,html{overflow:visible;margin:0;padding:0;background-color:#fff}
+body{position:relative;color:rgba(255,255,255,.8)}
+p{margin:0 0 11px}
+.clear{clear:both}
+img{max-width:100%;height:auto}
+.no-padding{padding-left:0!important;padding-right:0!important}
+.inview{visibility:hidden}hr{border-color:#727878;opacity:.3}
+.section-title{font-weight:600;text-transform:uppercase;letter-spacing:.2em;margin:0;color:#fff;}
+html a{color:rgba(255,255,255,.8);text-decoration:none}
+html a:focus,html a:hover{color:#fff;text-decoration:none}
+html *{-webkit-font-smoothing:antialiased;}
+.smooth{-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-transition:all .3s ease-out;-ms-transition:all .3s ease-out;transition:all .3s ease-out}.list-unstyled{margin-bottom:0}
+button:active,button:focus,button:hover,input:active,input:focus,input:hover,textarea:active,textarea:focus,textarea:hover{outline:0!important;-webkit-appearance:none}
+.innercol{width:80%}
+.main-color{color:#fff}
+.main-color-hover:hover{color:#fff!important}
+/* ==== 2) Heading style ==== */
+
+h1,h2,h3{margin-top:22px;margin-bottom:11px}
+h4,h5,h6{margin-top:11px;margin-bottom:11px}
+.h4, h4{font-weight:900}
+/* ==== 3) preloader style ==== */
+
+#preloader{position:fixed;left:0;top:0;height:100%;width:100%;background:#fff url(../images/preloader.gif) no-repeat center 45%;z-index:99999}
+.show{display:block!important}
+.window-height{height:100vh}
+
+/* ==== 4) service block ==== */
+.cell-container{display:table;table-layout:fixed;width:100%;height:100%}
+.center-cell{height:100%;position:relative;display:table-cell;vertical-align:middle;background:rgba(255, 255, 255, 0.04);box-shadow: 0 11px 9px 0 rgba(0, 0, 0, 0.4);-webkit-box-shadow: 0 11px 9px 0 rgba(0, 0, 0, 0.4);-moz-box-shadow: 0 11px 9px 0 rgba(0, 0, 0, 0.4);border-bottom:1px solid rgba(255, 255, 255, 0.2);}
+.center-cell:hover{box-shadow:none;-webkit-box-shadow:none;border-bottom:1px solid rgba(255, 255, 255, 1);}
+.center-cell i{position:absolute;color:rgba(255,255,255,.1);font-size:20px;left:0;top:0;}
+.service-head {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    padding: 0 10px 20px;
+	-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-transition:all .3s ease-out;-ms-transition:all .3s ease-out;transition:all .3s ease-out
+}
+#about .col-sm-4:hover .service-head{
+border-bottom: 1px solid rgba(255,255,255,1);
+}
+
+
+/* ==== 5) button style ==== */
+
+.button,.field{display:inline-block;padding:0px 11px 12px;margin:1px 1px 1px 0;font-size:20px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;border-bottom-color:rgba(255,255,255,.4);color:rgba(255,255,255,.95);cursor:pointer;background-color:transparent;text-shadow:0 1px 7px #333}
+.button.full-border,.field.full-border{border-color:rgba(255,255,255,.4)}
+.button.active,.button:focus,.button:hover,.field:focus,nav .active .button{border-bottom-color:#fff;color:#fff}
+.button.full-border.active,.button.full-border:focus,.button.full-border:hover{border-color:#fff}
+.button.main-color.active,.button.main-color:focus,.button.main-color:hover{background-color:transparent;border-color:#fff;color:#fff}
+
+/* ==== 6) background image loop ==== */
+
+#backgrounds{position:fixed;left:0;top:0;width:100%;height:100%;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-transition:all .3s ease-out;-ms-transition:all .3s ease-out;transition:all .3s ease-out}
+.bg1{background-image: url('../images/home_img.jpg')}
+.bg2{background-image: url('../images/home_img2.jpg')}
+.bg3{background-image: url('../images/home_img3.jpg')}
+#backgrounds .background{position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;background-size:cover}
+#backgrounds .background.active{opacity:1}
+
+/* ==== 7) background overlay ==== */
+
+#overlay{position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(30,30,30,.55) url(../images/overlay.png)}
+
+/* ==== 8) main container ==== */
+
+#main-container{position:relative;z-index:100}
+#top h1{font-weight:600;letter-spacing:.2em;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+#top h1 span{padding-top:9px;display:inline-block;color:#fff}
+#top #main-nav ul{position:static;left:0;top:0;margin-left:0;margin-right:0;padding:0;width:100%;display:block;text-align:right;list-style:none}
+#top #main-nav ul li{display:inline-block}
+#rolex-slides .slide{display:none;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-transition:all .3s ease-out;-ms-transition:all .3s ease-out;transition:all .3s ease-out}
+#rolex-slides .slide.active{display:block;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-transition:all .3s ease-out;-ms-transition:all .3s ease-out;transition:all .3s ease-out}
+#rolex-slides .slide .col{border-left:1px solid rgba(255,255,255,.2)}
+#rolex-slides .slide .col:first-child{border-left-width:0}
+#home .col{height:198px;text-align:center}
+#home .rolex {
+    font-size: 58px;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: uppercase;
+	line-height:50px;
+}
+#home .rolex-text{font-weight:400;letter-spacing:.2em;color:rgba(255,255,255,.6)}
+#form-container input{width:100%;font-size:15px;}
+#form-container textarea{width:100%;resize:none;font-size:15px;}
+#form-container .button{font-size:18px;min-width:84px}
+.subscribe-form .subscribe-fields{font-size:24px}
+.subscribe-form .subscribe-left{float:left;width:84%;margin:0}
+.subscribe-form .subscribe-left .field{display:block;width:100%}
+.subscribe-form .subscribe-right{float:right;width:15%;margin:0}
+.subscribe-form .subscribe-right .button{width:100%;height:39px;}
+body.ie .subscribe-form .subscribe-right .button{height:49px}
+body.color-set .button.main-color.active,body.color-set .button.main-color:focus,body.color-set .button.main-color:hover,body.color-set .main-color:not(.button){color:#edc33e}
+body.color-set .main-color-hover:hover{color:#edc33e!important}
+.subscribe-btn { margin-top: 20px;padding: 11px 11px 12px;border-width:0 0 1px;color:#fff;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-transition:all .3s ease-out;-ms-transition:all .3s ease-out;transition:all .3s ease-out}
+
+
+/* ==== 9) media query ==== */
+
+@media only screen and (max-width:767px){
+html{font-size:.75em}.xs-text-center{text-align:center!important}
+}
+@media (max-width: 480px) {
+ h1{font-size:28px;letter-spacing:-1px;text-align:left !important;}
+ #home .rolex {font-size: 42px;}
+}
+@media (max-width: 180px) {
+	#home .rolex {font-size: 32px;}
+h1{font-size:21px;letter-spacing:-1px;text-align:left !important;}
+}
